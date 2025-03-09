@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diplomado</title>
+    <style>
+        /* Asegura que la imagen ocupe todo el fondo */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: url('redessociales2.jpg') no-repeat center center fixed; /* Imagen de fondo */
+            background-size: cover; /* Hace que la imagen ocupe toda la página */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Alinea los elementos de arriba a abajo */
+            color: white; /* Color blanco para el texto */
+            font-family: Arial, sans-serif;
+            text-align: center; /* Centra el texto */
+        }
+
+        /* Contenedor de enlaces e imágenes */
+        .social-links {
+            display: flex;
+            justify-content: center; /* Centra los elementos en la fila */
+            align-items: center;
+            gap: 40px; /* Espacio entre los elementos */
+        }
+
+        /* Títulos */
+        h3 {
+            font-size: 1.5em;
+            margin: 0; /* Elimina los márgenes */
+        }
+
+        /* Estilo para los enlaces */
+        a {
+            color: #66FFFF; /* Azul brillante */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Imagen */
+        img {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px; /* Espacio entre el título y la imagen */
+        }
+
+        /* Enlace "Regresar" */
+        .regresar {
+            position: absolute;
+            bottom: 10px; /* Fija el enlace en la parte inferior */
+            color: #66FFFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .regresar:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="social-links">
+        <div>
+            <h3>Facebook</h3>
+            <a href="https://www.facebook.com/alejo.demendoza.3/">
+                <img src="facebook.jpg" alt="Facebook">
+            </a>
+        </div>
+        <div>
+            <h3>Instagram</h3>
+            <a href="https://www.instagram.com/alekool83/?hl=en">
+                <img src="instagram.jpg" alt="Instagram">
+            </a>
+        </div>
+    </div>
+
+    <a href="pagina1.html" class="regresar">Regresar</a>
+</body>
+</html>

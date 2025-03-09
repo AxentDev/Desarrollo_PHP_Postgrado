@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diplomado</title>
+    <style>
+        /* Elimina márgenes y padding del body */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Estilo para la imagen de fondo */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.8; /* Opcional: hace la imagen un poco transparente */
+        }
+
+        /* Estilos para el contenido */
+        .content {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            color: #66FFFF; /* Azul brillante */
+            z-index: 1;
+        }
+
+        /* Estilos para los enlaces */
+        .content a {
+            color: #66FFFF; /* Azul brillante */
+            text-decoration: none;
+            font-weight: bold;
+            display: block; /* Asegura que cada enlace ocupe su propia línea */
+            margin: 5px 0; /* Espaciado entre enlaces */
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+
+        }
+        /* Estilo para el enlace "Regresar" */
+        .regresar {
+            display: block; /* Hace que el enlace ocupe su propia línea */
+            text-align: center; /* Centra el texto */
+            color: #66FFFF; /* Color azul brillante */
+            font-weight: bold; /* Hace el texto en negrita */
+            margin-top: 20px; /* Espaciado superior */
+            text-decoration: none; /* Elimina el subrayado */
+        }
+
+.regresar:hover {
+    text-decoration: underline; /* Subraya el enlace cuando se pasa el ratón sobre él */
+}
+
+
+
+        /* Contenedor de la cuadrícula para los títulos e imágenes */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+            gap: 20px;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        /* Fila de elementos con título e imagen */
+        .grid-item {
+            text-align: center; /* Centra el contenido */
+        }
+
+        /* Título dentro de cada contenedor */
+        .title-item {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #66FFFF;
+            margin-bottom: 10px; /* Espacio entre el título y la imagen */
+        }
+
+        /* Imagen dentro de cada contenedor (ajustada a un tamaño más pequeño) */
+        .grid-item img {
+            max-width: 100%; /* Asegura que las imágenes no excedan el tamaño del contenedor */
+            height: auto; /* Mantiene la proporción original de la imagen */
+            max-height: 120px; /* Limita la altura máxima a 120px */
+            object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
+            border-radius: 8px; /* Opcional: para bordes redondeados en las imágenes */
+        }
+    </style>
+</head>
+<body>
+    <!-- Imagen de fondo ocupando toda la pantalla, pero no bloquea el scroll -->
+    <img src="HW1.gif" alt="Imagen HW1 a pantalla completa" class="background">
+
+    <!-- Contenido desplazable sobre la imagen de fondo -->
+    <div class="content">
+        <h1>Hola Alejo</h1>
+        
+        <h2>¿Qué quieres hacer?</h2>
+        <!-- Contenedor de la cuadrícula para los títulos e imágenes -->
+        <div class="grid-container">
+            <!-- Fila de elementos con título e imagen -->
+            <div class="grid-item">
+                <div class="title-item">Universidad</div>
+                <a href="https://campusvirtual.colombia.unir.net/my/" target="_blank">
+                    <img src="universidad.jpg" alt="Imagen Universidad">
+                </a>
+            </div>
+            <div class="grid-item">
+                <div class="title-item">Redes Sociales</div>
+                <a href="pagina8.html" target="_blank">
+                    <img src="redessociales.jpg" alt="Imagen Redes Sociales">
+                </a>
+            </div>
+            <div class="grid-item">
+                <div class="title-item">Instituto I3</div>
+                <a href="https://www.q10.com/Colombia" target="_blank">
+                    <img src="q10.jpg" alt="Imagen Instituto I3">
+                </a>
+            </div>
+            <div class="grid-item">
+                <div class="title-item">Chat GPT</div>
+                <a href="https://chatgpt.com/" target="_blank">
+                    <img src="chatgpt.jpg" alt="Imagen Chat GPT">
+                </a>
+            </div>
+            <div class="grid-item">
+                <div class="title-item">Gemini</div>
+                <a href="https://gemini.google.com/app/fc26a95b1b41f999?utm_source=app_launcher&utm_medium=owned&utm_campaign=base_all" target="_blank">
+                    <img src="gemini.jpg" alt="Imagen Gemini">
+                </a>
+            </div>
+            <div class="grid-item">
+                <div class="title-item">Gmail</div>
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">
+                    <img src="gmail.jpg" alt="Imagen Gmail">
+                </a>
+            </div>
+            <div class="grid-item">
+                <div class="title-item">WhatsApp</div>
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <img src="whatsapp.jpg" alt="Imagen WhatsApp">
+                </a>
+            </div>
+            <div class="grid-item">
+                <div class="title-item">PHP</div>
+                <a href="pagina13.html" target="_blank">
+                    <img src="politecnico1.jpg" alt="Imagen politecnico1">
+                </a>
+            </div>
+        </div>
+    </div>
+<a href="pagina.html" class="regresar">Salir</a>
+</body>
+</html>

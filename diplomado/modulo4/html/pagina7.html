@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diplomado</title>
+    <style>
+        /* Asegura que la imagen ocupe todo el fondo */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: url('imagen1.jpg') no-repeat center center fixed; /* Imagen de fondo */
+            background-size: cover; /* Hace que la imagen ocupe toda la página */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white; /* Color blanco para el texto */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo para el formulario */
+        form {
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el formulario */
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px; /* Ancho del formulario */
+            text-align: center;
+        }
+
+        /* Estilo para los campos de texto */
+        input[type="text"], input[type="email"], input[type="submit"], input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para el enlace "Regresar" */
+        a {
+            color: #66FFFF; /* Azul brillante */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Formulario De Alejo</h1>
+        <form>
+            Nombre:<br>
+            <input type="text" name="Nombre">
+            <br>
+            Apellido:<br>
+            <input type="text" name="Apellido">
+            <br>
+            Email:<br>
+            <input type="email" name="Email">
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="button" value="Registrarse" onclick="window.location.href='pagina9.html';"><br><br>
+
+        </form>
+        <a href="pagina1.html">Regresar</a>
+    </div>
+</body>
+</html>

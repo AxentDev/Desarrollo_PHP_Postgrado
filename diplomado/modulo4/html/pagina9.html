@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diplomado</title>
+	<style>
+        /* Asegura que la imagen ocupe todo el fondo */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: url('imagen4.jpg') no-repeat center center fixed; /* Imagen de fondo */
+            background-size: cover; /* Hace que la imagen ocupe toda la página */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Alinea los elementos de arriba a abajo */
+            color: white; /* Color blanco para el texto */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo para el formulario */
+        form {
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el formulario */
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px; /* Ancho del formulario */
+            text-align: center;
+            margin-bottom: 20px; /* Espacio para separar el formulario del enlace "Regresar" */
+        }
+
+        /* Estilo para los campos de texto */
+        input[type="text"], input[type="email"], input[type="submit"], input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para el enlace "Regresar" */
+        a {
+            color: #66FFFF; /* Azul brillante */
+            text-decoration: none;
+            font-weight: bold;
+            position: absolute;
+            bottom: 10px; /* Fija el enlace "Regresar" en la parte inferior */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Título encima del formulario */
+        h1 {
+            position: absolute;
+            top: 10px; /* Fija el título en la parte superior */
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+	<h1>Registro De Alejo</h1>
+	<form>
+		Nombre:<br>
+		<input type="text" name="Nombre" required="">
+		<br>
+		Apellido:<br>
+		<input type="text" name="Nombre" required="">
+		<br>
+		Email:<br>
+		<input type="Email" name="Email" required="">
+		<br>
+		<br>
+		<input type="checkbox" name="Pais1" value="Colombia"> Colombia<br>
+		<input type="checkbox" name="Pais2" value="Venezuela"> Venezuela<br>
+		<input type="checkbox" name="Pais3" value="Mexico"> Mexico<br><br>
+		Adjuntar Foto Personal:<br>
+		<input type="file" name="Foto"><br><br>
+		Selecciona tu tipo de Vehiculo:<br>
+		<select name ="Tipo De Vehiculo">
+			<option value="Selecciona">Selecciona</option>
+           	<option value="Volvo">Volvo</option>
+           	<option value="Chevrolet">Chevrolet</option>
+           	<option value="Ford">Ford</option>
+           	<option value="BMW">BMW</option>
+           	<option value="Mazda">Mazda</option><br><br>
+    	<input type="button" value="Registrarse" onclick="window.location.href='pagina7.html';"><br><br>
+	</form>
+	<a href="pagina1.html"> Regresar</a>
+</body>
+</html>

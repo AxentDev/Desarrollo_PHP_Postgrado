@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Cifrada</title>
+    <style>
+        /* Estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fondo de la página */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('politecnico1.jpg');
+            background-size: cover; /* La imagen ocupa toda la pantalla */
+            background-position: center center; /* La imagen se centra */
+            background-repeat: no-repeat; /* Evita que se repita la imagen */
+            background-attachment: fixed; /* La imagen no se desplaza con el scroll */
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Contenedor principal */
+        .container {
+            text-align: center;
+            max-width: 1200px; /* Máxima anchura */
+            width: 100%; /* Se asegura de ocupar todo el ancho disponible */
+        }
+
+        /* Título */
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        /* Subtítulo */
+        h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para las columnas de enlaces */
+        .enlaces {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+            gap: 20px; /* Espacio entre las columnas */
+            justify-content: center;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Estilo para los enlaces */
+        a {
+            color: #66FFFF;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid #66FFFF;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #66FFFF;
+            color: black;
+        }
+
+        /* Imagen */
+        img {
+            width: 550px;
+            height: 370px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para el enlace "Regresar" */
+        .regresar {
+            position: absolute;
+            bottom: 10px;
+            color: #66FFFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .regresar:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Postgrado PHP Alejo</h1>
+        <h3>Paginas del postgrado en PHP</h3>
+
+
+        <!-- Contenedor de enlaces en columnas -->
+        <div class="enlaces">
+            <a href="pagina2.html">Ir a página 2</a>
+            <a href="pagina3.html">Ir a página 3</a>
+            <a href="pagina4.html">Ir a página 4</a>
+            <a href="pagina5.html">Ir a página 5</a>
+            <a href="pagina6.html">Ir a página 6</a>
+            <a href="pagina7.html">Ir a página 7</a>
+            <a href="pagina9.html">Ir a página 9</a>
+            <a href="pagina10.html">Ir a página 10</a>
+            <a href="pagina11.html">Ir a página 11</a>
+            <a href="pagina12.html">Ir a página 12</a>
+        </div>
+
+        <!-- Enlace "Regresar" -->
+        <a href="pagina1.html" class="regresar">Regresar</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Cifrada</title>
+    <style>
+        /* Estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Centrado del contenido */
+        html, body {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('H.jpg');
+            background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+            background-position: center center; /* Centra la imagen de fondo */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-attachment: fixed; /* Evita que la imagen se desplace al hacer scroll */
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            max-width: 300px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        form input[type="text"],
+        form input[type="password"],
+        form input[type="submit"] {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            background: transparent;
+            color: #FFFFFF;
+            border-bottom: 2px solid #FFFFFF;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        form input[type="submit"] {
+            border: 2px solid #FFFFFF;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background: #FFFFFF;
+            color: #000000;
+        }
+
+        .error {
+            color: #FF0000;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+    </style>
+    <script>
+        function validarFormulario(event) {
+            event.preventDefault(); // Evita el envío del formulario
+
+            // Obtiene los valores de usuario y contraseña
+            const usuario = document.querySelector('input[name="Usuario"]').value;
+            const contraseña = document.querySelector('input[name="Contraseña"]').value;
+
+            // Verifica las credenciales
+            if (usuario === "Alekool83" && contraseña === "151409") {
+                window.location.href = "pagina1.html"; // Redirige a la página 1 si son correctas
+            } else {
+                // Muestra un mensaje de error si son incorrectas
+                document.getElementById("error").textContent = "Usuario o contraseña incorrectos.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <h1>Hola Alejo</h1>
+        <!-- Formulario con validación de JavaScript -->
+        <form onsubmit="validarFormulario(event)">
+            <input type="text" name="Usuario" placeholder="Usuario" required><br>
+            <input type="password" name="Contraseña" placeholder="Contraseña" required><br>
+            <input type="submit" value="Enviar"><br>
+        </form>
+        <div id="error" class="error"></div>
+    </div>
+</body>
+</html>
